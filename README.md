@@ -1,4 +1,4 @@
-# HRHumanTex: High-Resolution Human Texture Estimation from a Single Image
+# HRHumanTex: 1024² Human Texture Estimation from a Single Image
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
@@ -180,7 +180,7 @@ This suggests that **rendering-based evaluation is essential** for assessing 3D 
 
 ```bibtex
 @mastersthesis{liu2025hrhumantex,
-  title   = {High-Resolution Human Texture Estimation from a Single Image},
+  title   = {1024² Human Texture Estimation from a Single Image},
   author  = {Yunfan Liu},
   school  = {Technische Universit\"at Dresden},
   year    = {2025},
