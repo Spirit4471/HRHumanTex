@@ -87,6 +87,12 @@ SHHQ50samples/
 SHHQ_testdata/
 
 # ============================================
+# LaTeX source (only compiled thesis PDF is distributed)
+# ============================================
+latex-thesis,yunfanLiu/
+latex_template_cgv__1_ (1).pdf
+
+# ============================================
 # Legacy / WIP directories
 # ============================================
 siggraph_paper/

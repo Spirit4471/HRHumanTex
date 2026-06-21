@@ -12,7 +12,7 @@
 HRHumanTex generates **1024×1024** UV texture maps of clothed humans from a single RGB image by combining super-resolution (SR) data augmentation with DreamBooth-fine-tuned Stable Diffusion inpainting.
 
 <p align="center">
-  <img src="latex-thesis,yunfanLiu/fig/HRHumanTexpipeline.png" alt="HRHumanTex Pipeline" width="95%"/>
+  <img src="docs/images/HRHumanTexpipeline.png" alt="HRHumanTex Pipeline" width="95%"/>
 </p>
 
 ---
