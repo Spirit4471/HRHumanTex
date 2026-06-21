@@ -1,0 +1,97 @@
+# ============================================
+# Model weights — distribute via HuggingFace/Google Drive, NOT git
+# ============================================
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.bin
+models/
+checkpoints/
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ============================================
+# Virtual environments
+# ============================================
+venv/
+.venv/
+env/
+.env
+
+# ============================================
+# Jupyter
+# ============================================
+.ipynb_checkpoints/
+
+# ============================================
+# IDE / Editor
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================
+# LaTeX build artifacts
+# ============================================
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex*
+*.xdv
+*.run.xml
+*.bcf
+*.lot
+*.lof
+
+# ============================================
+# OS files
+# ============================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============================================
+# Large / generated / temporary files
+# ============================================
+*.mp4
+*.zip
+debug/
+debug_*/
+failed_samples.txt
+*_temp.*
+*_debug.*
+
+# ============================================
+# Dataset directories (keep sample-data/)
+# ============================================
+SMPLitex-textures/
+Deepfashion_samples/
+SHHQ50samples/
+SHHQ_testdata/
+
+# ============================================
+# Legacy / WIP directories
+# ============================================
+siggraph_paper/
+
+# ============================================
+# HuggingFace cache
+# ============================================
+hf_cache/

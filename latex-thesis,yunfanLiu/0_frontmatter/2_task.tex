@@ -1,0 +1,29 @@
+
+\course{Computational Modeling and Simulation}
+\matriculationyear{2021}
+\issuedate{19.12.2024}
+\duedate{20.05.2025}
+\professor{Prof. Dr. Stefan Gumhold}
+
+
+\begin{task}[] % If needed, a custom title can be provided between the brackets
+	\minisec{\objectivesname}\smallskip	
+	Texturing is a well-known computer graphics technique to apply color to meshes via UV maps. UV maps describe the relationship between 2D-pixel coordinates of the texture image and 3D mesh coordinates. In computer vision, UV maps are typically not known for a given object in an image. The focus of this thesis is to learn a deep-learning-based model to estimate a texture map of the garment given an input image of a clothed person. The most suitable approach is to build upon a recent texture estimation model called SMPLitex (https://dancasas.github.io/projects/SMPLitex/index.html). The model takes an input image, estimates the pixel-to-surface correspondences of the SMPL model, and projects the image pixels to a partial UV map. The partial UV map represents a visible part and is used as a conditional signal to sample a fine-tuned diffusion model to complete the texture map.\\ 
+ The main tasks of the thesis include:
+- the overview of the literature on estimating garment textures from images of clothed people;
+- quantitative and qualitative evaluation of the SMPLitex model on public data;
+- qualitative evaluation of the original SMPLitex model on unseen image samples;
+- improving the quality of the texture images by upsampling or using deep learning models for image super-resolution.\\ 
+The optional tasks may include: 
+- applying the texture on the garment meshes instead to the SMPL body mesh (the corresponding garment geometry can be selected manually);
+- proposing a new model for image super-resolution of texture images;
+- proposing other improvements to the baseline SMPLitex model."
+	
+	\minisec{\focusname}\smallskip
+	\begin{itemize}
+		\item Pixel recognition \& estimation
+		\item Develop a novel algorithm \& a complete implementation
+		\item documentation and graphic describe
+	\end{itemize}
+\end{task}
+

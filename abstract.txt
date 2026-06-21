@@ -1,0 +1,30 @@
+Estimating high-resolution human textures from a single image remains a core challenge in
+3D human modeling, this problem is crucial for creating photorealistic 3D virtual humans in
+applications ranging from cinema industry, game industry to Virtual Reality(VR),Augmented
+Reality(AR) development. While prior works such as SMPLitex[CC23] have explored the use
+of diffusion models[Rom+21] for UV texture[Lév+02] completion, their output resolution
+(512²) and data scale remain limited, restricting downstream application and generalization.
+In this thesis, I propose High-Resolution Human Texture estimation(HRHumanTex), a new
+framework that enables 1024²-resolution UV texture estimation from a single image by
+integrating state-of-the-art super-resolution (SR) and Latent Diffusion Model inpainting
+strategies into a unified pipeline.
+First, I construct enhanced UV datasets by applying seven state-of-the-art(SOTA) super
+resolution(SR) models—including RealESRGAN[Wan+21], SRFormer[Zho+23], DiffBIR[Lin+24],
+SwinIR[Lia+21], BSRGAN[Zha+21], StableSR[Wan+24] and RCAN[Zha+18]—on SMPLitex
+textures, and benchmark their effectiveness on human UV texturemap enhancement. Next,
+I fine-tune Stable Diffusion v1.5 with DreamBooth[Rui+23] on each SR-augmented dataset,
+resulting in multiple specialized inpainting models. Given a single RGB image, HRHumanTex
+computes a masked partial texture using DensePose[Wu+19] and SGHM[Che+22], and
+completes the full texture with one of the trained diffusion inpainting models.
+To evaluate both SR and inpainting stages, I introduce a multi-level evaluation suite:
+traditional metrics including Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index
+(SSIM), Learned Perceptual Image Patch Similarity (LPIPS), Fréchet Inception Distance (FID),
+rendering based SSIM and LPIPS evaluation by estimating pose and camera parameters with
+ROMP[Sun+21], and rendering SMPL model with uv texture then evaluate them with ground
+truth images. Differentiable rendering[Rav+20] based uv texture optimization also help to
+get better texture quality. Extensive experiments on DeepFashion[Liu+16] and SHHQ[Fu+22]
+show that HRHumanTex generates sharper, more realistic and more consistent UV textures
+compared to SMPLitex baseline methods.
+Overall, this work demonstrates how scaling up both data quality and model resolution leads
+to significant gains in single-image 3D texture estimation, providing new insights for texture
+synthesis, virtual try-on(VTO), and human digitization.
